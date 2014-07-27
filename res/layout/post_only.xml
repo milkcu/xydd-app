@@ -1,0 +1,41 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" >
+
+    <EditText android:id="@+id/user" />
+
+    <EditText
+        android:id="@+id/password"
+        android:password="true" />
+
+    <EditText
+        android:id="@+id/status"
+        android:gravity="top"
+        android:lines="5"
+        android:maxLines="5"
+        android:maxWidth="200sp"
+        android:scrollHorizontally="false"
+        android:singleLine="false" />
+
+	<TextView
+		android:id="@+id/label"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="下拉框1："
+	/>
+
+	<Spinner
+		android:id="@+id/spinner01"
+		android:layout_width="150dip"
+		android:layout_height="wrap_content"
+		android:drawSelectorOnTop="false"
+	/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+</TableLayout>

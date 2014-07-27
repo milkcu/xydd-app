@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#2477ab" >
+
+        <ImageView
+            android:id="@+id/post_imageview_gohome"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_details_gohome" />
+
+        <TextView
+            android:id="@+id/textview_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发布消息"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- post form begin -->
+
+            <EditText
+                android:id="@+id/ptitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinner01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false" />
+
+            <EditText
+                android:id="@+id/pdetail"
+                android:gravity="top"
+                android:maxWidth="200sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Send" />
+
+            <!-- post form end -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
